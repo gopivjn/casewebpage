@@ -25,8 +25,25 @@
             #snapshot {
                 width: 25%;
                 float: left;
+            }
+
+            #bottomrow {
+                display: flex;
+            }
+            
+            #highlights {
+                width: 75%;
                 
             }
+            #wizzlets {
+                width: 25%;
+                float: left;
+            }
+            #valuesets {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        
             .bg1{
                 background-color: #e3fdfd;
             }
@@ -54,5 +71,31 @@
                 #snapshot {
                     width: auto;
                     height: auto;
+                    float:none;
+                }
+                #bottomrow {
+                    flex-direction: column;
+                    height: auto;
+                }
+                
+                #highlights {
+                    width: auto;
+                    
+                }
+                #wizzlets {
+                    width: auto;
+                    float:none;
+                }
+                #valuesets {
+                    display: grid;
+                    grid-template-columns: auto;
+                    align-content: center;
+                }
+            }
+            @media screen and (max-width: 320px) {
+                #valuesets {
+                    display: grid;
+                    grid-template-columns: auto;
+                    justify-content: center;
                 }
             }
