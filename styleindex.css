@@ -3,6 +3,13 @@
             
             body{
                 background: #EBEEF4;
+                font-family: 'Roboto Slab', serif;
+                font-family: 'Roboto', sans-serif;
+            }
+            #page{
+                width: 100%;
+                display: block;
+                grid-template-columns: auto;
             }
 
             div{
@@ -15,6 +22,16 @@
                 margin-top: -20px !important;   
                 z-index: 1; 
             }
+            #footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: white;
+                text-align: center;
+                margin-bottom: 0px !important;
+             }
+            
             #pagecontent{
                 max-width:1280px;
                 margin: 0 auto;
@@ -24,22 +41,23 @@
     
             #nav{
                 width: 20%;
-                height: 10%;
+                height: auto;
                 flex-grow: 1;
             }
             #nav a {
-                padding: 10px 10px;
-                margin: 10px;
+                text-align:center;
+                padding: 30px 10px;
+                margin: 10px 10px;
                 display: flex;
-                flex-direction: column;
-                justify-items:center;
+                flex-direction: row;
                 text-decoration: none;
                 font-size: 18px;
                 color: green;
-                text-transform: uppercase;   
+            
+                 
             }
             #nav a:hover {
-                color: #064579;
+                color:blue;
               }
             
             #content{
@@ -72,7 +90,10 @@
             }
             #wizzlets {
                 width: 225px;
+                height: auto;
                 float: left;
+                display: grid;
+                grid-template-columns: auto;
             }
             #valuesets {
                 display: grid;
@@ -86,13 +107,22 @@
                 background-color: #cbf1f5;
             }
             .bg3{
+                text-align:center;                
                 background-color: #a6e3e9;
             }
             .bg4{
                 background-color: #71c9ce;
             }
+            #wstats1, #wstats2{
+                background-color:white;
+            }
+            .stats{
+                font-size: 38px;
+                font-weight: 300;
+                color: lightslategray;
+            }
 
-            @media screen and (max-width: 770px) {
+            @media screen and (max-width: 768px) {
                 
                 #toprow {
                     
@@ -120,6 +150,9 @@
                 #wizzlets {
                     width: auto;
                     float:none;
+                    display: grid;
+                    grid-template-columns: 250px 250px;
+                    justify-content: center;
                 }
                 #valuesets {
                     display: grid;
@@ -137,19 +170,37 @@
                     width: auto;
                     height: 100px;
                     display: flex;
-                    flex-direction: row;                    
-
+                    flex-direction: row;    
+                    text-align:center;                
+                }
+                .bg3{
+                    text-align:center;                
+                    background-color: #a6e3e9;
                 }
                 #content{
                     width: auto;
                     float: none;
                     margin-top: auto;
-
+                }
             }
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: 420px) {
                 #valuesets {
                     display: grid;
                     grid-template-columns: auto;
                     justify-content: center;
                 }
+                #wizzlets{
+                    display: grid;
+                    grid-template-columns: auto;
+                    justify-content: center;
+                }
+                #nav span {
+                    display:none;
+                    
+                }
+                .bg3{
+                    text-align:center;                
+                    background-color: #a6e3e9;
+                
+
             }
