@@ -33,7 +33,14 @@
                 display: flex;
                 flex-direction: column;
                 justify-items:center;
+                text-decoration: none;
+                font-size: 18px;
+                color: green;
+                text-transform: uppercase;   
             }
+            #nav a:hover {
+                color: #064579;
+              }
             
             #content{
                 width: 80%;
