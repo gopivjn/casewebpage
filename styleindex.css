@@ -68,7 +68,6 @@
                 width: 90%;
                 float: right;
                 overflow:auto;
-                background-color: blue;
             }
             #toprow {
             display: flex;
