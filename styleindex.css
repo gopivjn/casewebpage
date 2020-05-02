@@ -13,13 +13,14 @@
             }
 
             div{
-                margin: 20px;
+                margin: 0px;
             }     
             #head {
                 width: 100%;
+                height: auto;
                 margin: 0 auto;
                 position: fixed;
-                margin-top: -20px !important; 
+                margin-top: -10px !important; 
                 text-align: center;  
                 z-index: 1; 
                 color: white;
@@ -35,13 +36,13 @@
              }
             
             #pagecontent{
-                max-width:1280px;
+                max-width:1440px;
                 margin: 0 auto;
                 display: flex;
             }
     
             #nav{
-                width: 15%;
+                width: 10%;
                 height: auto;
                 position:fixed;
             }
@@ -62,10 +63,12 @@
               }
             
             #content{
-                margin-left: 19%;
-                width: 85%;
+                margin-top:1%;
+                margin-left: 14%;
+                width: 90%;
                 float: right;
                 overflow:auto;
+                background-color: blue;
             }
             #toprow {
             display: flex;
@@ -87,33 +90,122 @@
             }
             
             #highlights {
-                width: 75%;
+                width: 72%;
                 overflow: scroll;
                 
             }
             #wizzlets {
-                width: 225px;
-                height: auto;
-                float: left;
-                display: grid;
-                grid-template-columns: auto;
+                width: 343px;
+                height: 500px;
+                background-color: white;
                 overflow: scroll;
-                padding: 10px;
-                
+              /*  float: left; 
+                display: grid; 
+                grid-template-columns: auto;
+                 */
             }
+
+            .whead{
+                line-height:20px;
+                margin:0px;
+                padding:16px 16px 0px;
+            }
+            .wheader{
+                font-size:14px;
+                color:#579613;
+                line-height:32px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px;
+                text-transform:uppercase;
+            }
+            .wbody{
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px 0px 16px;
+                padding:16px 16px 0px;
+            }
+            .wavatar{
+                color:#adadad;
+                font-size:48px;
+                line-height:42px;
+                vertical-align:baseline;
+                letter-spacing:0.5px;
+                word-spacing:0px;
+                margin:0px;
+                padding:12px 0px 14px;
+                font-weight:300;
+                text-transform:uppercase;
+            }   
+            .wtitle{
+                font-size: 14px; 
+                color: rgb(43, 43, 43); 
+                display: block; 
+                line-height: 21px; 
+                text-transform: uppercase; 
+                margin-bottom: 4px;
+                font-weight: 500;
+            } 
+            .wsupertitle{
+                color:#5a5a5a;
+                font-size:15px;
+                line-height:21px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px;
+                font-weight:400;
+                text-transform:none;
+            }
+            .wtitlebox{
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px;
+            
+            }
+            #wstats{
+                width: 343px;
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px 0px 15px;
+            }
+            .second .wtitle {
+                text-transform:capitalize;
+                vertical-align:baseline;
+            }
+            .third .wavatar {
+                text-align: center;
+            }
+            .third .wtitle {
+                text-align: center;
+            }
+            .third .wsupertitle {
+                text-align: center;
+            }
+
             #valuesets {
                 display: grid;
                 grid-template-columns: auto auto;
             }
         
             .bg1{
-                background-color: #e3fdfd;
+                background-color: #EBEEF4;
             }
             .bg2{
                 background-color: #cbf1f5;
             }
             .bg3{
-                text-align:center;                
                 background-color: #a6e3e9;
             }
             .bg4{
@@ -123,12 +215,7 @@
                 background-color: #006494;
                 color:white
             }
-            #wstats1, #wstats2{
-                background-color:#ffa600;
-                color: #003f5c;
-                padding:10px;
-                border-radius: 15px;
-            }
+          
             #wquotes1{
                 font-size: 16px;
                 font-family: Georgia, 'Times New Roman';
@@ -138,7 +225,9 @@
             .stats{
                 font-size: 48px;
                 font-weight: 300;
-                color: #003f5c;
+                color:rgb(173, 173, 173);
+
+                /* color: #003f5c; */
             }
 
             @media screen and (max-width: 768px) {
@@ -171,12 +260,10 @@
                     float:none;
                     display: grid;
                     grid-template-columns: 250px 250px;
-                    justify-content: center;
                 }
                 #valuesets {
                     display: grid;
                     grid-template-columns: auto auto;
-                    align-content: center;
                 }
                 
                 #pagecontent{
@@ -208,26 +295,22 @@
                     
                 }
                 .bg3{
-                    text-align:center;                
                     background-color: #a6e3e9;
             }
             @media screen and (max-width: 420px) {
                 #valuesets {
                     display: grid;
                     grid-template-columns: auto;
-                    justify-content: center;
                 }
                 #wizzlets{
                     display: grid;
                     grid-template-columns: auto;
-                    justify-content: center;
                 }
                 #nav span {
                     display:none;
                     
                 }
                 .bg3{
-                    text-align:center;                
                     background-color: #a6e3e9;
                 }
                 #pagecontent{
