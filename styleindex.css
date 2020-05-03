@@ -17,7 +17,7 @@
             }     
             #head {
                 width: 100%;
-                height: auto;
+                height: 20px;
                 margin: 0 auto;
                 position: fixed;
                 margin-top: -10px !important; 
@@ -64,7 +64,7 @@
             
             #content{
                 margin-top:1%;
-                margin-left: 14%;
+                margin-left: 10.5%;
                 width: 90%;
                 float: right;
                 overflow:auto;
@@ -84,19 +84,233 @@
                 width: 225px;
                 float: left;
             }
-                #bottomrow {
-                display: flex;
+            #bottomrow {
+                width: auto;
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            .msection{
+                width: 99%;
+                background-color: white;
+            }
+            #vcontainerout{
+                font-size:14px;
+                color:#777777;
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px 10px;
+                font-weight: 400;
+                text-transform:none;
+            }
+            #vcontainerin{
+                font-size:14px;
+                color:#000000;
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:10px 0px;
+                font-weight: 400;
+                text-transform:none;
+            }
+            .vhead{
+                font-size:14px;
+                color:#000000;
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:16px 16px 0px;
+                font-weight: 400;
+                text-transform:none;
             }
             
-            #highlights {
-                width: 72%;
-                overflow: scroll;
+            .vheader{
+                color:#579613;
+                font: size 14px;
+                line-height:18px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px;
+                font-weight:400;
+                text-transform:uppercase;
+            }
+            .vsetsgroup{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            .vsets{
+                color:#000000;
+                font: size 14px;
+                line-height:20x;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px 0px 16px;
+                padding:16px 16px 0px;
+                font-weight:400;
+                text-transform:none;
+            }
+            .vicon1{
+                color:#000000;
+                font: size 14px;
+                line-height:20x;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px;
+                font-weight:400;
+                text-transform:none;
+            }
+            
+            img{
+                
+                color: rgb(173, 173, 173);
+                background: none;
+                user-select: none;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px;
+                border-radius: 0px;
+                height: auto;
+                width: auto;
+                vertical-align: top;
+                margin-right: 0px;
+                border: none;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                max-height: 52px;
+                line-height: 42px;
+                font-weight: 300;
+                padding: 12px 0px 14px;
+            }
+            .vbody{
+                color:#000000;
+                font-size:14px;
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px;
+                font-weight:400;
+                text-transform:none;
                 
             }
+            .vtitle{
+            
+                font-size: 14px;
+                color: rgb(43, 43, 43);
+                display: block;
+                line-height: 21px;
+                text-transform: uppercase;
+                margin-bottom: 4px;
+                font-weight: 500;
+            } 
+            .vsupertitle{
+                color:#5a5a5a;
+                font-size:15px;
+                line-height:21px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px;
+                font-weight:400;
+                text-transform:none;
+            }
+            #wqhead{
+                font-size:14px;
+                color:#000000;
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:16px 16px 0px;
+                font-weight:400;
+            }
+            .wqheader{
+                color:#579613;
+                font: size 14px;
+                line-height:18px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px;
+                font-weight:400;
+                text-transform:uppercase;
+            }
+            .wqbody{
+            
+                font: size 14px;
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px 0px 16px;
+                padding:16px 16px 0px;
+                font-weight:400;
+                text-transform:none;
+            }
+            
+            blockquote {
+                color: #5a5a5a;
+                position: relative;
+                font-size: 17px;
+                line-height: 27px;
+                font-style: italic;
+                padding: 0px;
+                margin: 0px;
+            }
+            blockquote:before {
+                font-family: "Roboto";
+                content: " \201C ";
+                font-size: 46px;
+                font-weight: 400;
+                position: absolute;
+                left: -24px;
+                top: 4px;
+                color: #5a5a5a;
+            }
+            .wqfoot{
+                font: size 14px;
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding:0px;
+                font-weight:400;
+                text-transform:none;
+            }
+            .wqfooter{
+                color:#8c8c8c;
+                font: size 14px;
+                line-height:20px;
+                vertical-align:baseline;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px 0px 6px;
+                padding:0px 0px 0px 4px;
+                font-weight:400;
+                text-transform:none;
+            }
+
             #wizzlets {
                 width: 343px;
-                height: 500px;
-                background-color: white;
+                height: 475px;
+                background-color:white;
                 overflow: scroll;
               /*  float: left; 
                 display: grid; 
