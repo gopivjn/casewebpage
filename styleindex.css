@@ -24,6 +24,7 @@
                 text-align: center;  
                 z-index: 1; 
                 color: white;
+                background-color: thistle;
             }
             #footer {
                 position: fixed;
@@ -33,6 +34,7 @@
                 color: white;
                 text-align: center;
                 margin-bottom: 0px !important;
+                background-color: thistle;
              }
             
             #pagecontent{
@@ -410,23 +412,6 @@
             #valuesets {
                 display: grid;
                 grid-template-columns: auto auto;
-            }
-        
-            .bg1{
-                background-color: #EBEEF4;
-            }
-            .bg2{
-                background-color: #cbf1f5;
-            }
-            .bg3{
-                background-color: #a6e3e9;
-            }
-            .bg4{
-                background-color: #71c9ce;
-            }
-            .bg5{
-                background-color: #006494;
-                color:white
             }
           
             #wquotes1{
