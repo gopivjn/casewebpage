@@ -1,4 +1,6 @@
 
+  
+
             
             body{
                 margin: 0;
@@ -194,20 +196,11 @@
                 
             }
             .namecardimg{
-                background-image: url("tmb.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                width: 60px;
                 overflow: hidden;
-                height: 60px;
+                background-size: 100%;
                 position: relative;
                 top:0px;
                 right:-10px;
-                max-width: 160px;
-                max-height: 95px;
-                text-align: right;
-                border-radius: 2px;
-                float: right;
             }
             
             #content{
@@ -297,22 +290,9 @@
                 color: rgb(140, 140, 140);
                 display: inline-block;
             }
-            .heroimage{
-                color:#000000;
-                font: size 14px;
-                line-height:20px;
-                vertical-align:baseline;
-                letter-spacing:normal;
-                word-spacing:0px;
-                margin:0px !important;
-                font-weight:400;
+            .heroimage img {
                 max-width: 100%;
-                width: auto;
-                height: 361px;
-                background-color: yellowgreen;
-                background-image: url("Banner.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
+                height: auto;
 
             }
             .ocontentbox{
@@ -581,7 +561,7 @@
                 text-transform:none;
             }
             
-            img{
+            .vsets img{
                 
                 color: rgb(173, 173, 173);
                 background: none;
