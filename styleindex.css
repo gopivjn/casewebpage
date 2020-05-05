@@ -31,6 +31,7 @@
                 display:flex;
                 justify-content: flex-end;
                 align-items: center;
+                box-shadow: 1px 1px 4px 1px #464646;
               
             }
             h1 {
@@ -62,13 +63,32 @@
             }
             #footer {
                 position: fixed;
+                height: 20px;
                 left: 0;
                 bottom: 0;
                 width: 100%;
-                color: white;
-                text-align: center;
+                color:grey;
+                text-align: left;
+                font-size: 11px;
                 margin-bottom: 0px !important;
-                background-color: thistle;
+                background-color:whitesmoke;
+                padding-right:20px;
+                justify-content: center;
+                padding-top:5px ;
+                box-shadow: 1px 1px 4px 1px #464646;
+            }
+            #footer1{
+                width: 100%;
+                height: 55px;
+                margin: 0 auto;
+                position: fixed;
+                text-align: right;
+                font-size:22px;  
+                z-index: 1; 
+                color: black;
+                background-color: white;
+                padding-left: 20px ;
+                margin-bottom: 0px !important;
             }
             
             #pagecontent{
@@ -161,8 +181,7 @@
                 line-height: 20px;
                 white-space: normal;
                 font-weight: 500;
-                color: rgb(43, 43, 43);
-                box-sizing: border-box;
+                color: rgb(65, 65, 65);
                 padding-bottom: 10px;
             }
             .namecardsubjects{
@@ -321,6 +340,12 @@
                 font-weight:300;
                 text-transform:none;
             }
+            .ocontentsub{
+                font-family:"Roboto Slab";
+                color:#464646;
+                font-size: 19.012px;
+                font-weight:400;
+            }
             /*
             #content, #toprow, #bottomrow {
                 height: 85vh;
@@ -404,21 +429,65 @@
             ul {
                 padding-left: 16px;
                 margin: 8px 0px;
-            }
-            ol {
-                padding-left: 16px;
-               
+                
             }
 
-            .slist{
-                color:rgb(90, 90, 90);
+            ol {
+                padding-left: 16px;
+                margin: 8px 0px;
+                
+            }
+           ul li {
+                color:rgb(49, 112, 196);
                 font-size: 15px;
-                line-height:24px;
+                line-height:21px;
                 vertical-align:top;
                 letter-spacing:normal;
                 word-spacing:0px;
                 margin:0px;
-                padding: 0px;
+                padding-bottom: 8px;
+                font-weight:400;
+                text-align: left;
+                text-transform:none;
+            }
+
+            ul li span {
+                color:rgb(90, 90, 90);
+                font-size: 15px;
+            }
+            ol li {
+                color:rgb(49, 112, 196);
+                font-size: 15px;
+                line-height:21px;
+                vertical-align:top;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding-bottom: 8px;
+                font-weight:400;
+                text-align: left;
+                text-transform:none;
+            }
+
+            ol li span {
+                color:rgb(90, 90, 90);
+                font-size: 15px;
+            }
+            p span{
+                color:rgb(49, 112, 196);
+                font-size: 150%;
+                vertical-align: middle;
+            }
+
+            .slist {
+                color:rgb(90, 90, 90);
+                font-size: 15px;
+                line-height:21px;
+                vertical-align:top;
+                letter-spacing:normal;
+                word-spacing:0px;
+                margin:0px;
+                padding-bottom: 8px;
                 font-weight:400;
                 text-align: left;
                 text-transform:none;
@@ -432,6 +501,7 @@
             .msection{
                 width: 721px;
                 background-color: white;
+                margin-bottom:  30px;
             }
             #vcontainerout{
                 font-size:14px;
