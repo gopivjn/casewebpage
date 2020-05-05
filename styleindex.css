@@ -8,7 +8,8 @@
                 font-family: 'Roboto', sans-serif;
             }
             #page{
-                width: 100%;
+                max-width:1440px;
+                margin: 0 auto;
                 display: block;
                 grid-template-columns: auto;
             }
@@ -17,7 +18,7 @@
                 margin: 0px;
             }     
             header {
-                width: 1440px;
+                width: 100%;
                 height: 55px;
                 margin: 0 auto;
                 position: fixed;
@@ -63,7 +64,7 @@
                 position: fixed;
                 left: 0;
                 bottom: 0;
-                width: 1440px;
+                width: 100%;
                 color: white;
                 text-align: center;
                 margin-bottom: 0px !important;
@@ -71,7 +72,7 @@
             }
             
             #pagecontent{
-                max-width:1440px;
+                width:100%;
                 margin: 0 auto;
                 margin-top: 0px !important; 
                 display: grid;
@@ -86,7 +87,7 @@
                 top:65px;
             }
             .navover{
-                width: 320px;
+                width: auto;
                 height: 40px;
                 background-color:#b9ceeb;
                 padding-top: 30px;
@@ -102,7 +103,7 @@
                 float: right;
             }
             .navhigh{
-                width: 320px;
+                width: auto;
                 height: 50px;
                 background-color: #b9ceeb;
                 padding-top: 20px;
@@ -123,7 +124,7 @@
                 color:#ffa600;
             }
             .namecard{
-                width: 298px;
+                width: auto;
                 height: 86px;
                 background-color:#D1DDEC;
                 margin-bottom: 10px;
@@ -192,12 +193,13 @@
             
             #content{
                 margin-top:1%;
-                margin-left: 350px;
+                margin-left: 100%;
                 width: 1084px;
                 float: right;
                 overflow:auto;
             }
             #toprow {
+            width: 100%;
             display: flex;
             height: auto;
             margin-bottom: 10px;
@@ -422,7 +424,7 @@
                 text-transform:none;
             }
             #bottomrow {
-                width: 1084px;
+                width: 100%;
                 display: grid;
                 grid-template-columns: auto auto;
                 margin-right: 20px;
