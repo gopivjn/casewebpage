@@ -175,7 +175,7 @@
                 
             }
             .namecardimg{
-                background-image: url(tmb.jpg);
+                background-image: url(./tmb.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
                 width: 60px;
