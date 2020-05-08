@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+}
+
 body{
     background: #EBEEF4;
     font-family: 'Roboto Slab', serif;
@@ -105,7 +109,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     box-shadow: 1px 1px 4px 1px #464646;
-  
+    margin-top: 0px !important;
 }
 h1 {
     white-space: nowrap;
@@ -960,7 +964,7 @@ blockquote:before {
     #navpane{
         width: 100% ;
         height: auto;
-        margin-top: 65px !important; 
+        margin-top: 55px !important; 
         position: fixed;
     }
         .navover{
@@ -1003,7 +1007,7 @@ blockquote:before {
             color:#ffa600;
         }
         .namecard{
-            width: 700px;
+            width: 748px;
             height: 66px;
             background-color:#D1DDEC;
             margin-bottom: 10px;
@@ -1060,14 +1064,14 @@ blockquote:before {
             right:80px;
         }
         .msection {
-            width: 415px;
+            width: 100%;
             overflow: scroll;
             background:white;
             margin-top: 10px;
             
         }
         #overview {
-            width: 415px;
+            width: 100%;
             margin:0px;
             text-align: left;
         
@@ -1076,7 +1080,7 @@ blockquote:before {
             display: flex;
             background: #EBEEF4;
             width: 100%  ;
-            margin-top: 278px;
+            margin-top: 268px;
             }
         #wizzlets {
                 margin-top: 10px;
@@ -1143,7 +1147,7 @@ blockquote:before {
             }
             
     }       
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 450px){
         #head{
             width: 100%;
             height: 55px;
@@ -1423,6 +1427,3 @@ blockquote:before {
             
 
     }
-
-
-
