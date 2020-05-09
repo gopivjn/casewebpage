@@ -28,16 +28,11 @@ body{
     width: 701px;
     overflow: scroll;
     background:white;
-    padding: 10px 20px 0px 10px;
-    margin:10px 0px 0px;
+    margin:10px 10px 0px;
+    padding: 10px 10px 60px;
+    margin-right: 5px;
     
 }
-#highlights {
-    width: 100%;
-    
-    
-}
-
 #pagecontent {
     max-width:1440px;
     margin: 0 auto;
@@ -602,7 +597,6 @@ p span{
     letter-spacing:normal;
     word-spacing:0px;
     margin:0px;
-    padding:0px 10px;
     font-weight: 400;
     text-transform:none;
 }
@@ -791,7 +785,7 @@ p span{
     text-transform:none;
 }
 
-blockquote {
+.blockquote {
     color: #5a5a5a;
     position: relative;
     font-size: 17px;
@@ -800,7 +794,7 @@ blockquote {
     padding: 0px;
     margin: 0px;
 }
-blockquote:before {
+.blockquote:before {
     font-family: "Roboto";
     content: " \201C ";
     font-size: 46px;
@@ -840,125 +834,76 @@ blockquote:before {
     color: #003f5c;
 }
 
-@media screen and (max-width: 768px) {
-    
-    #toprow {
-        
-        flex-direction: column;
-        height: auto;
-    }
-    #overview  {
-        width:auto;
-        height: auto;
-    }
-    #snapshot {
-        width: auto;
-        height: auto;
-        float:none;
-    }
-    #bottomrow {
-        flex-direction: column;
-        height: auto;
-    }
-    
-    
-    #wizzlets {
-        width: auto;
-        float:none;
-        display: grid;
-        grid-template-columns: 250px 250px;
-        justify-content: center;
-    }
-    #valuesets {
-        display: grid;
-        grid-template-columns: auto auto;
-        align-content: center;
-    }
-    
-    #pagecontent{
-        max-width:768px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    #nav{
-        width: 100%;
-        position: fixed;   
-        margin: 0 auto;
-    }
-    #nav a {
-        display: flex;
-        flex-direction: row;
-        text-decoration: none;
-        font-size: 18px;
-        color: #58508d;
-        padding: 0 20px 0 20px;
-        margin: 0 5%;
-        float:left;
-    }
-    #content{
-        width: 88%;
-        float: none;
-        margin: auto;
-        margin-top: 4%;
-        
-    }
-    .bg3{
-        text-align:center;                
-        background-color: #a6e3e9;
-}
-@media screen and (max-width: 420px) {
-    #valuesets {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-    }
-    #wizzlets{
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-    }
-    #nav span {
-        display:none;
-        
-    }
-    .bg3{
-        text-align:center;                
-        background-color: #a6e3e9;
-    }
-    #pagecontent{
-        max-width:768px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    #nav{
-        width: 100%;
-        text-align:center;
-        position: fixed;    
-        margin: 0 auto;
-    }
-    #nav a {
-        padding: 0 10px 0 10px;
-        margin: 0 5%;
-        float:left;
-    }
-    
-    #content{
-        width: 88%;
-        float: none;
-        margin: auto;
-        margin-top: 9%;
-    }
-}
-
 
 @media only screen and (max-width: 768px){
 
-    #pagecontent {
-        max-width:768px;
-        margin: 0 auto;
+   
+    #overview {
+        width: 100%;
+        text-align: left;
+        margin: 0 0 0 0;
+    }
+    
+    #toprow {
+        flex-direction: row;
+        height: auto;
+        width: 100%  ;
+        margin-top: 268px;
+        }
+  
+    #bottomrow {
+        flex-direction: row;
+        height: auto;
         display: flex;
+        background: #EBEEF4;
+        width: 100%;
+        margin-left: 0px !important;
+    }
+    #content{
+        width: 768px;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        overflow:hidden;
+    }
+    #snapshot {
+        float: left;
+        width: 343px;
+        height: 250px;
+        overflow: scroll;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    .msection {
+        width: 395px;
+        overflow: scroll;
+        background:white;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+   
+    #wizzlets {
+        margin-top: 10px;
+        width: 343px;
+        height: 470px;
+        float: left;
+        display: grid;
+        grid-template-columns: auto;
+        overflow: scroll;
+        background-color: white;
+        margin-left: 5px;
+    }
+        
+    .vsetsgroup{
+        display: grid;
+        grid-template-columns: auto;
+    }
+   
+    .heroimage img {
+        width: 397px;
+        height: auto;
+        max-height: 197px
+    
     }
     
     #navpane{
@@ -967,17 +912,17 @@ blockquote:before {
         margin-top: 55px !important; 
         position: fixed;
     }
-        .navover{
-            width: auto;
-            height: 40px;
-            background-color:#b9ceeb;
-            padding-top: 30px;
-            margin-bottom: 10px;
-            text-decoration: none;
-            padding-right: 10px;
-            text-transform: uppercase;
-            
-        }
+    .navover{
+        width: auto;
+        height: 40px;
+        background-color:#b9ceeb;
+        padding-top: 30px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        padding-right: 10px;
+        text-transform: uppercase;
+        
+    }
         .navover a {
             text-decoration: none;
             color: #3170c4;
@@ -1007,7 +952,7 @@ blockquote:before {
             color:#ffa600;
         }
         .namecard{
-            width: 748px;
+            width: auto;
             height: 66px;
             background-color:#D1DDEC;
             margin-bottom: 10px;
@@ -1029,7 +974,7 @@ blockquote:before {
             text-transform:none;
         }
         .namcardtitle{
-            width:450px;
+            width:auto;
             font-size: 13px;
             color: #3170c4;
             display: block;
@@ -1039,7 +984,7 @@ blockquote:before {
             text-transform: uppercase;
         }
         .namecardsupertitle{
-            width:450px;
+            width:auto;
             font-size: 14px;
             line-height: 20px;
             white-space: normal;
@@ -1063,55 +1008,7 @@ blockquote:before {
             top:20px;
             right:80px;
         }
-        .msection {
-            width: 100%;
-            overflow: scroll;
-            background:white;
-            margin-top: 10px;
-            
-        }
-        #overview {
-            width: 100%;
-            margin:0px;
-            text-align: left;
         
-        }
-        #toprow {
-            display: flex;
-            background: #EBEEF4;
-            width: 100%  ;
-            margin-top: 268px;
-            }
-        #wizzlets {
-                margin-top: 10px;
-                width: 343px;
-                height: 500px;
-                float: left;
-                display: grid;
-                grid-template-columns: auto;
-                overflow: scroll;
-                background-color: white;
-                margin-left: 5px;
-            }
-            #snapshot {
-                float: left;
-                width: 343px;
-                height: 250px;
-                overflow: scroll;
-                margin-top: 10px;
-                margin-left: 0px;
-            }
-            #content{
-                width: 100%;
-                float: right;
-                overflow:auto;
-                margin-top: 55px !important; 
-            }
-                 #bottomrow {
-                display: flex;
-                background: #EBEEF4;
-                width: 100%;
-            }
             .wqbody{
 
                 font: size 14px;
@@ -1125,7 +1022,7 @@ blockquote:before {
                 text-transform:none;
             }
             
-            blockquote {
+            .blockquote {
                 color: #5a5a5a;
                 position: relative;
                 font-size: 17px;
@@ -1135,7 +1032,7 @@ blockquote:before {
                 margin: 0px;
                 
             }
-            blockquote:before {
+            .blockquote:before {
                 font-family: "Roboto";
                 content: " \201C ";
                 font-size: 46px;
@@ -1147,7 +1044,7 @@ blockquote:before {
             }
             
     }       
-    @media only screen and (max-width: 450px){
+@media only screen and (max-width: 450px){
         #head{
             width: 100%;
             height: 55px;
@@ -1193,14 +1090,23 @@ blockquote:before {
             cursor: pointer;
             padding-right:50px;
         }
+
+        #navpane{
+            width: 100%  ;
+            height: auto;
+            margin-top: 55px !important; 
+            position:fixed;
+
+        }
         .namecard{
-            width: 320px;
+            width: auto;
             height: 86px;
             background-color:#D1DDEC;
             margin-bottom: 10px;
             padding:16px;
             text-align: left;
             display: flex;
+            position: relative;
         }
         .namecardtitlegroup{
             color:#000000;
@@ -1250,24 +1156,95 @@ blockquote:before {
             top:10px;
             right:15px;
         }
+
+        a span {
+            display: none;
+        }
+
+        .menu{
+            width: auto;
+            height: 66px;
+            background-color:#D1DDEC;
+            margin-bottom: 10px;
+            padding:0px 20px;
+            display: flex;
+            grid-template-columns: 130px 130px;
+            justify-content:space-between;
+            
+        }
+        .navover{
+            width: 100px;
+            height: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: none;
+            padding: 5px 0px 5px 0px;
+            margin :10px auto;
+            font-size: 20px;
+            background-color: #b9ceeb;
+            align-self: center;
+        }
+        a {
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            display: block;
+            
+        }
+        
+        .navover a {
+            text-decoration: none;
+            color: #3170c4;
+            padding:0px !important;
+        }
+        .navhigh{
+            width: 100px;
+            height: 50px;
+            text-decoration: none;
+            text-transform: uppercase; 
+            background-color: none;
+            padding: 5px 0px 5px 0px;
+            margin :10px auto;
+            font-size: 20px;
+            background-color: #b9ceeb;
+            align-self: center;
+            vertical-align: middle;
+        }
+        .navhigh a {
+            text-decoration: none;
+            color: #3170c4;
+            padding:0px !important;
+            vertical-align: middle;
+           
+
+        }
+        .navover a:hover {
+            color:#ffa600;
+        }
+        .navhigh a:hover {
+            color:#ffa600;
+        }
+        
         .msection {
-            width: 300px;
+            width: auto;
             overflow: scroll;
             background:white;
             margin-top: 10px;
             
         }
         #overview {
-            width: 300px;
+            width: auto;
             margin:0px;
             text-align: left;
         
         }
         #toprow {
+            flex-direction: column;
             display: flex;
             background: #EBEEF4;
             width: 100%  ;
-            margin-top: 278px;
+            margin-top: 210px;
             }
         #wizzlets {
                 margin-top: 10px;
@@ -1297,7 +1274,8 @@ blockquote:before {
                 overflow:auto;
                 margin-top: 55px !important; 
             }
-                 #bottomrow {
+            #bottomrow {
+                flex-direction: column;
                 display: flex;
                 background: #EBEEF4;
                 width: 100%;
@@ -1315,7 +1293,7 @@ blockquote:before {
                 text-transform:none;
             }
             
-            blockquote {
+            .blockquote {
                 color: #5a5a5a;
                 position: relative;
                 font-size: 17px;
@@ -1326,7 +1304,7 @@ blockquote:before {
                 text-align: left;
                 
             }
-            blockquote:before {
+            .blockquote:before {
                 font-family: "Roboto";
                 content: " \201C ";
                 font-size: 46px;
