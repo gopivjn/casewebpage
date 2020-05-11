@@ -205,10 +205,10 @@ h1 {
     float: right;
     font-size: 18px;
 }
-.navover a:hover {
+.over a:hover {
     color:#ffa600;
 }
-.navhigh a:hover {
+.high a:hover {
     color:#ffa600;
 }   
 
@@ -959,10 +959,10 @@ p span{
         padding-left: 40px;
         float: left;
     }
-    .navover a:hover {
+    .over a:hover {
         color:#ffa600;
     }
-    .navhigh a:hover {
+    .high a:hover {
         color:#ffa600;
     }
     .namecard111{
@@ -1281,6 +1281,13 @@ p span{
     .high a {
         font-size: 16px;
         padding-right: 40px;
+    }
+
+    .over a:hover {
+        color:#ffa600;
+    }
+    .high a:hover {
+        color:#ffa600;
     }
     
     .msection {
