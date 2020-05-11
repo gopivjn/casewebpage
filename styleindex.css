@@ -1240,6 +1240,10 @@ p span{
         background-color: #D1DDEC;
         margin-left:10px;
         z-index: 1;
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
         position: sticky;
         top: 55px;
         margin-right: 20px !important;
