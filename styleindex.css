@@ -150,44 +150,50 @@ h1 {
     padding-top:5px ;
     box-shadow: 1px 1px 4px 1px #464646;
 }
+.appmenu{
+    width: auto;
+    height: 120px;
+    background-color: #EBEEF4;
+}
 
 .navover{
     width: auto;
     height: 40px;
     background-color:#b9ceeb;
-    padding-top: 30px;
-    margin-bottom: 10px;
     text-decoration: none;
-    padding-right: 10px;
     text-transform: uppercase;
-    
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-top:15px;
 }
+.navhigh{
+    width: auto;
+    height: 40px;
+    background-color:#b9ceeb;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 10px;
+    padding-top:15px;
+}
+
 .navover a {
     text-decoration: none;
     color: #3170c4;
     float: right;
-}
-.navhigh{
-    width: auto;
-    height: 50px;
-    background-color: #b9ceeb;
-    padding-top: 20px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    padding-right: 10px;
-    text-transform: uppercase;        
+    font-size: 18px;
 }
 .navhigh a {
     text-decoration: none;
     color: #3170c4;
     float: right;
+    font-size: 18px;
 }
 .navover a:hover {
     color:#ffa600;
 }
 .navhigh a:hover {
     color:#ffa600;
-}
+}   
 .namecard{
     width: auto;
     height: 86px;
@@ -247,21 +253,6 @@ h1 {
 }
 
 
-#nav a {
-    text-align:center;
-    padding: 20px 10px ;
-    margin: 10px 10px;
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    font-size: 18px;
-    color: #58508d;
-
-     
-}
-#nav a:hover {
-    color:#ffa600;
-  }
 
 
 .oouter {
@@ -842,13 +833,15 @@ p span{
         width: 100%;
         text-align: left;
         margin: 0 0 0 0;
+        
     }
     
     #toprow {
         flex-direction: row;
         height: auto;
         width: 100%  ;
-        margin-top: 268px;
+        margin-top: 270px;
+        background: #EBEEF4;
         }
   
     #bottomrow {
@@ -864,6 +857,7 @@ p span{
         margin-left: 10px !important;
         margin-right: 10px !important;
         overflow:hidden;
+        background: #EBEEF4;
     }
     #snapshot {
         float: left;
@@ -872,6 +866,7 @@ p span{
         overflow: scroll;
         margin-top: 0px;
         margin-left: 10px;
+        
     }
 
     .msection {
@@ -911,6 +906,8 @@ p span{
         height: auto;
         margin-top: 55px !important; 
         position: fixed;
+        display: flex;
+        flex-direction: column;
     }
     .navover{
         width: auto;
@@ -974,7 +971,7 @@ p span{
             text-transform:none;
         }
         .namcardtitle{
-            width:auto;
+            width:748px;
             font-size: 13px;
             color: #3170c4;
             display: block;
@@ -1077,6 +1074,7 @@ p span{
             font-family: Georgia;
             padding-right: 15px;
             cursor: pointer;
+            
         }
        
         .logo{
@@ -1095,7 +1093,9 @@ p span{
             width: 100%  ;
             height: auto;
             margin-top: 55px !important; 
-            position:fixed;
+            position: absolute;
+            display: grid;
+            grid-template-columns: auto;
 
         }
         .namecard{
@@ -1106,7 +1106,6 @@ p span{
             padding:16px;
             text-align: left;
             display: flex;
-            position: relative;
         }
         .namecardtitlegroup{
             color:#000000;
@@ -1161,62 +1160,58 @@ p span{
             display: none;
         }
 
-        .menu{
+        .appmenu{
             width: auto;
-            height: 66px;
-            background-color:#D1DDEC;
-            margin-bottom: 10px;
-            padding:0px 20px;
-            display: flex;
-            grid-template-columns: 130px 130px;
-            justify-content:space-between;
+            height: 60px;
+            background-color: #D1DDEC;
+            padding-top: 10px;
+            position: -webkit-sticky;
+            position: -moz-sticky;
+            position: -ms-sticky;
+            position: -o-sticky;
+            position: sticky;
+            top:0px;
             
+
         }
         .navover{
-            width: 100px;
-            height: 50px;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-color: none;
-            padding: 5px 0px 5px 0px;
-            margin :10px auto;
-            font-size: 20px;
+            width: 20%;
+            float: left;
+            height: 30px;
             background-color: #b9ceeb;
-            align-self: center;
+            margin-left: 7%;
+            padding-top:10px;
+            padding-right:10px;
+            padding-bottom:10px;
+            padding-left:20%;
         }
-        a {
-            width: 100px;
-            height: 50px;
-            text-align: center;
-            line-height: 50px;
-            display: block;
-            
-        }
-        
-        .navover a {
+
+        .navhigh {
+            width: 20%;
+            float: left;
+            height: 30px;
+            background-color: #b9ceeb;
+            margin-left:1%;
+            padding-top:10px;
+            padding-right:10px;
+            padding-bottom:10px;
+            padding-left:20%;
+         }
+
+         .navover a {
             text-decoration: none;
             color: #3170c4;
             padding:0px !important;
+            font-size: 28px;
+            
         }
-        .navhigh{
-            width: 100px;
-            height: 50px;
-            text-decoration: none;
-            text-transform: uppercase; 
-            background-color: none;
-            padding: 5px 0px 5px 0px;
-            margin :10px auto;
-            font-size: 20px;
-            background-color: #b9ceeb;
-            align-self: center;
-            vertical-align: middle;
-        }
+        
         .navhigh a {
             text-decoration: none;
             color: #3170c4;
             padding:0px !important;
             vertical-align: middle;
-           
+            font-size: 28px;
 
         }
         .navover a:hover {
@@ -1244,7 +1239,7 @@ p span{
             display: flex;
             background: #EBEEF4;
             width: 100%  ;
-            margin-top: 210px;
+            margin-top: 220px;
             }
         #wizzlets {
                 margin-top: 10px;
@@ -1302,6 +1297,7 @@ p span{
                 padding: 0px;
                 margin: 0px;
                 text-align: left;
+                
                 
             }
             .blockquote:before {
