@@ -1155,6 +1155,7 @@ p span{
             top:10px;
             right:15px;
         }
+        
 
         a span {
             display: none;
@@ -1169,10 +1170,8 @@ p span{
             position: -moz-sticky;
             position: -ms-sticky;
             position: -o-sticky;
-            position: sticky;
-            top:0px;
             
-
+        
         }
         .navover{
             width: 20%;
@@ -1232,6 +1231,7 @@ p span{
             width: auto;
             margin:0px;
             text-align: left;
+            
         
         }
         #toprow {
@@ -1268,6 +1268,7 @@ p span{
                 float: right;
                 overflow:auto;
                 margin-top: 55px !important; 
+                
             }
             #bottomrow {
                 flex-direction: column;
@@ -1333,7 +1334,7 @@ p span{
             }
             .osupertitle{
                 font-size: 24px;
-                line-height: 36px;
+                line-height: 30px;
                 white-space: normal;
                 font-weight: 500;
                 color: rgb(43, 43, 43);
@@ -1376,7 +1377,7 @@ p span{
                 font-family:"Roboto Slab";
                 color:#414141;
                 font-size: 16.012px;
-                line-height:30px;
+                line-height:26px;
                 vertical-align:baseline;
                 letter-spacing:normal;
                 word-spacing:0px;
