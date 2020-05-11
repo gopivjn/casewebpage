@@ -39,16 +39,10 @@ body{
     display: flex;
    
 }
-#navpane{
-    width: 22.95%  ;
-    height: auto;
-    margin-top: 65px !important; 
-    position:fixed;
-}
+
 #content{
     margin-left: 22.95%;
     width: 100%;
-    float: right;
     overflow:auto;
     margin-top: 55px !important; 
 }
@@ -150,39 +144,62 @@ h1 {
     padding-top:5px ;
     box-shadow: 1px 1px 4px 1px #464646;
 }
-.appmenu{
-    width: auto;
-    height: 120px;
-    background-color: #EBEEF4;
-}
 
-.navover{
-    width: auto;
-    height: 40px;
-    background-color:#b9ceeb;
-    text-decoration: none;
-    text-transform: uppercase;
+
+
+
+.namecard111{
+    width: 19.95%;
+    height: 86px;
+    background-color:#D1DDEC;
     margin-bottom: 10px;
-    padding-right: 10px;
-    padding-top:15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding:16px;
+    text-align: left;
+    display: flex;
+    position:fixed;
+    margin-top: 65px !important; 
 }
-.navhigh{
-    width: auto;
+
+.nav{
+    width: 22%;
+    height:200px;
+    position:fixed;
+    margin-top: 190px;
+}
+
+.over{
+    width: 98%;
+    margin-left:10px;
+    margin-bottom: 10px;
     height: 40px;
     background-color:#b9ceeb;
     text-decoration: none;
     text-transform: uppercase;
-    padding-right: 10px;
-    padding-top:15px;
+    padding-top: 20px;
+    padding-right: 2%;
+}
+.high {
+    width: 98%;
+    float: left;
+    height: 40px;
+    background-color:#b9ceeb;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left:10px;
+    padding-top: 20px;
+    padding-right: 2%;
+
 }
 
-.navover a {
+.over a {
     text-decoration: none;
     color: #3170c4;
     float: right;
     font-size: 18px;
 }
-.navhigh a {
+.high a {
     text-decoration: none;
     color: #3170c4;
     float: right;
@@ -194,15 +211,8 @@ h1 {
 .navhigh a:hover {
     color:#ffa600;
 }   
-.namecard{
-    width: auto;
-    height: 86px;
-    background-color:#D1DDEC;
-    margin-bottom: 10px;
-    padding:16px;
-    text-align: left;
-    display: flex;
-}
+
+
 .namecardtitlegroup{
     color:#000000;
     font: size 14px;
@@ -825,9 +835,16 @@ p span{
     color: #003f5c;
 }
 
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media only screen and (max-width: 768px){
 
+
+    #pagecontent {
+        max-width:768px;
+        margin: 0 auto;
+        display: flex;
+       
+    }
    
     #overview {
         width: 100%;
@@ -840,7 +857,7 @@ p span{
         flex-direction: row;
         height: auto;
         width: 100%  ;
-        margin-top: 270px;
+        margin-top: 265px;
         background: #EBEEF4;
         }
   
@@ -920,485 +937,526 @@ p span{
         text-transform: uppercase;
         
     }
-        .navover a {
-            text-decoration: none;
-            color: #3170c4;
-            padding-left: 40px;
-            float: left;
-        }
-        .navhigh{
-            width: auto;
-            height: 50px;
-            background-color: #b9ceeb;
-            padding-top: 20px;
-            margin-bottom: 10px;
-            text-decoration: none;
-            padding-right: 10px;
-            text-transform: uppercase;    
-        }
-        .navhigh a {
-            text-decoration: none;
-            color: #3170c4;
-            padding-left: 40px;
-            float: left;
-        }
-        .navover a:hover {
-            color:#ffa600;
-        }
-        .navhigh a:hover {
-            color:#ffa600;
-        }
-        .namecard{
-            width: auto;
-            height: 66px;
-            background-color:#D1DDEC;
-            margin-bottom: 10px;
-            padding:16px;
-            text-align: left;
-            display: flex;
-        }
-        .namecardtitlegroup{
-            color:#000000;
-            font: size 14px;
-            line-height:20px;
-            text-align: left;
-            vertical-align:baseline;
-            letter-spacing:normal;
-            word-spacing:0px;
-            margin:0px 0px 8px;
-            padding:0px;
-            font-weight:400;
-            text-transform:none;
-        }
-        .namcardtitle{
-            width:748px;
-            font-size: 13px;
-            color: #3170c4;
-            display: block;
-            line-height: 19px;
-            padding-bottom: 0px;
-            font-weight:400;
-            text-transform: uppercase;
-        }
-        .namecardsupertitle{
-            width:auto;
-            font-size: 14px;
-            line-height: 20px;
-            white-space: normal;
-            font-weight: 500;
-            color: rgb(65, 65, 65);
-            padding-bottom: 6px;
-        }
-        .namecardsubjects{
-            color: rgb(140, 140, 140);
-            font-size: 13px;
-            line-height: 19px;
-            padding-top: 6px;
-            font-weight:400;
-            vertical-align: bottom;
-            
-        }
-        .namecardimg{
-            overflow: hidden;
-            background-size: 100%;
-            position: absolute;
-            top:20px;
-            right:80px;
-        }
+    .navover a {
+        text-decoration: none;
+        color: #3170c4;
+        padding-left: 40px;
+        float: left;
+    }
+    .navhigh{
+        width: auto;
+        height: 50px;
+        background-color: #b9ceeb;
+        padding-top: 20px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        padding-right: 10px;
+        text-transform: uppercase;    
+    }
+    .navhigh a {
+        text-decoration: none;
+        color: #3170c4;
+        padding-left: 40px;
+        float: left;
+    }
+    .navover a:hover {
+        color:#ffa600;
+    }
+    .navhigh a:hover {
+        color:#ffa600;
+    }
+    .namecard111{
+        width: 94%;
+        height: 86px;
+        background-color:#D1DDEC;
+        margin-bottom: 10px;
+        padding:16px;
+        text-align: left;
+        display: flex;
+        position:fixed;
+        margin-top: 56px !important; 
+    }
+    .nav{
+        width: 98%;
+        height:140px;
+        position:fixed;
+        margin-top: 173px;
+        background-color: #D1DDEC;
+        margin-left:10px;
+
+    }
+
+    .over{
+        width: 95%;
+        height: 40px;
+        background-color:#b9ceeb;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-right: 2%;
+        padding-left: -10px;
+    }
+    .high {
+        width: 95%;
+        float: left;
+        height: 40px;
+        background-color:#b9ceeb;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-right: 2%;
+    
+    }
+    
+    .namecardtitlegroup{
+        color:#000000;
+        font: size 14px;
+        line-height:20px;
+        text-align: left;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px 0px 8px;
+        padding:0px;
+        font-weight:400;
+        text-transform:none;
+    }
+    .namcardtitle{
+        width:748px;
+        font-size: 13px;
+        color: #3170c4;
+        display: block;
+        line-height: 19px;
+        padding-bottom: 0px;
+        font-weight:400;
+        text-transform: uppercase;
+    }
+    .namecardsupertitle{
+        width:auto;
+        font-size: 14px;
+        line-height: 20px;
+        white-space: normal;
+        font-weight: 500;
+        color: rgb(65, 65, 65);
+        padding-bottom: 6px;
+    }
+    .namecardsubjects{
+        color: rgb(140, 140, 140);
+        font-size: 13px;
+        line-height: 19px;
+        padding-top: 6px;
+        font-weight:400;
+        vertical-align: bottom;
         
-            .wqbody{
+    }
+    .namecardimg{
+        overflow: hidden;
+        background-size: 100%;
+        position: absolute;
+        top:20px;
+        right:80px;
+    }
+    
+        .wqbody{
 
-                font: size 14px;
-                line-height:20px;
-                vertical-align:baseline;
-                letter-spacing:normal;
-                word-spacing:0px;
-                margin:0px 0px 16px;
-                padding:16px 16px 0px;
-                font-weight:400;
-                text-transform:none;
-            }
+        font: size 14px;
+        line-height:20px;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px 0px 16px;
+        padding:16px 16px 0px;
+        font-weight:400;
+        text-transform:none;
+    }
+    
+    .blockquote {
+        color: #5a5a5a;
+        position: relative;
+        font-size: 17px;
+        line-height: 27px;
+        font-style: italic;
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    .blockquote:before {
+        font-family: "Roboto";
+        content: " \201C ";
+        font-size: 46px;
+        font-weight: 400;
+        position: absolute;
+        left: -24px;
+        top: 4px;
+        color: #5a5a5a;
+    }
             
-            .blockquote {
-                color: #5a5a5a;
-                position: relative;
-                font-size: 17px;
-                line-height: 27px;
-                font-style: italic;
-                padding: 0px;
-                margin: 0px;
-                
-            }
-            .blockquote:before {
-                font-family: "Roboto";
-                content: " \201C ";
-                font-size: 46px;
-                font-weight: 400;
-                position: absolute;
-                left: -24px;
-                top: 4px;
-                color: #5a5a5a;
-            }
-            
-    }       
+     
+}
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media only screen and (max-width: 450px){
-        #head{
-            width: 100%;
-            height: 55px;
-            margin: 0 auto;
-            position: fixed;
-            text-align: left;
-            font-size:22px;  
-            z-index: 1; 
-            color: black;
-            background-color: white;
-            padding-left: 20px ;
-            display:flex;
-            justify-content: flex-end;
-            align-items: center;
-            box-shadow: 1px 1px 4px 1px #464646;
-          
-        }
-        h1 {
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            margin-right: auto;
-            padding-top: 0px;
-            letter-spacing: 0px;
-            font-size: 22px;
-            font-weight: 400;
-            color: rgb(30, 54, 87);
-            height: 55px;
-            line-height: 55px;
-            flex: initial;
-            font-family: Georgia;
-            padding-right: 15px;
-            cursor: pointer;
-            
-        }
-       
-        .logo{
-            max-height: 1px;
-            width: auto;
-            cursor: pointer;
-            padding-right:70px;
-        }
-        .user{
-            height: 1px;
-            cursor: pointer;
-            padding-right:50px;
-        }
 
-        #navpane{
-            width: 100%  ;
-            height: auto;
-            margin-top: 55px !important; 
-            position: absolute;
+    #pagecontent {
+        max-width:450px;
+        margin: 0px auto;
+        display: grid;
+        grid-template-columns: auto;
+       
+    }
+
+    #head{
+        width: 100%;
+        height: 55px;
+        margin: 0 auto;
+        position: fixed;
+        text-align: left;
+        font-size:22px;  
+        z-index: 1; 
+        color: black;
+        background-color: white;
+        padding-left: 20px ;
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        box-shadow: 1px 1px 4px 1px #464646;
+      
+    }
+    h1 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-right: auto;
+        padding-top: 0px;
+        letter-spacing: 0px;
+        font-size: 22px;
+        font-weight: 400;
+        color: rgb(30, 54, 87);
+        height: 55px;
+        line-height: 55px;
+        flex: initial;
+        font-family: Georgia;
+        padding-right: 15px;
+        cursor: pointer;
+        
+    }
+   
+    .logo{
+        max-height: 1px;
+        width: auto;
+        cursor: pointer;
+        padding-right:70px;
+    }
+    .user{
+        height: 1px;
+        cursor: pointer;
+        padding-right:50px;
+    }
+
+    #navpane{
+        width: 100%  ;
+        height: auto;
+        margin-top: 55px !important; 
+        position: absolute;
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+    .namecard{
+        width: auto;
+        height: 86px;
+        background-color:#D1DDEC;
+        margin-bottom: 10px;
+        padding:16px;
+        text-align: left;
+        display: flex;
+    }
+    .namecardtitlegroup{
+        color:#000000;
+        font: size 14px;
+        line-height:20px;
+        text-align: left;
+        vertical-align:baseline;
+        letter-spacing:normal;
+        word-spacing:0px;
+        margin:0px 0px 8px;
+        padding:0px;
+        font-weight:400;
+        text-transform:none;
+    }
+    .namcardtitle{
+        width: 230px;
+        font-size: 13px;
+        color: #3170c4;
+        display: block;
+        line-height: 19px;
+        padding-bottom: 0px;
+        font-weight:400;
+        text-transform: uppercase;
+    }
+    .namecardsupertitle{
+        width: 230px;
+        font-size: 14px;
+        line-height: 20px;
+        white-space: normal;
+        font-weight: 500;
+        color: rgb(65, 65, 65);
+        padding-bottom: 6px;
+    }
+    .namecardsubjects{
+        color: rgb(140, 140, 140);
+        font-size: 13px;
+        line-height: 19px;
+        padding-top: 6px;
+        font-weight:400;
+        vertical-align: bottom;
+        
+    }
+    .namecardimg{
+        overflow: hidden;
+        background-size: 100%;
+        position: absolute;
+        top:10px;
+        right:15px;
+    }
+
+    a span {
+        display: none;
+    }
+
+    .namecard111{
+        width: 88%;
+        height: 86px;
+        background-color:#D1DDEC;
+        margin-bottom: 10px;
+        padding:16px;
+        text-align: left;
+        display: flex;
+        position: absolute;;
+        margin-top: 56px !important; 
+    }
+    .nav{
+        width: 98%;
+        height:60px;
+        margin-top: 177px;
+        background-color: #D1DDEC;
+        margin-left:10px;
+        z-index: 1;
+        position: sticky;
+        top: 55px;
+        margin-right: 20px !important;
+        
+    }
+
+    .over{
+        width: 120px;
+        height: 38px;
+        background-color:#b9ceeb;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: 5px;
+        float: left;
+        padding-left: 20px;
+        
+    }
+    .high {
+        width: 130px;
+        float: left;
+        height: 38px;
+        margin-top: 5px;
+        background-color:#b9ceeb;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+        
+    .over a {
+        font-size: 16px;
+        padding-right: 55px;
+        padding-bottom: 20px !important;
+        padding-top: -30px;
+    }
+
+    .high a {
+        font-size: 16px;
+        padding-right: 40px;
+    }
+    
+    .msection {
+        width: auto;
+        overflow: scroll;
+        background:white;
+        margin-top: 10px;
+        
+    }
+    #overview {
+        width: auto;
+        margin:0px;
+        text-align: left;
+    
+    }
+    #toprow {
+        flex-direction: column;
+        display: flex;
+        background: #EBEEF4;
+        width: 100%  ;
+        margin-top: 10px;
+        }
+    #wizzlets {
+            margin-top: 10px;
+            width: 300px;
+            height: 500px;
+            float: left;
             display: grid;
             grid-template-columns: auto;
-
-        }
-        .namecard{
-            width: auto;
-            height: 86px;
-            background-color:#D1DDEC;
-            margin-bottom: 10px;
-            padding:16px;
-            text-align: left;
-            display: flex;
-        }
-        .namecardtitlegroup{
-            color:#000000;
-            font: size 14px;
-            line-height:20px;
-            text-align: left;
-            vertical-align:baseline;
-            letter-spacing:normal;
-            word-spacing:0px;
-            margin:0px 0px 8px;
-            padding:0px;
-            font-weight:400;
-            text-transform:none;
-        }
-        .namcardtitle{
-            width: 230px;
-            font-size: 13px;
-            color: #3170c4;
-            display: block;
-            line-height: 19px;
-            padding-bottom: 0px;
-            font-weight:400;
-            text-transform: uppercase;
-        }
-        .namecardsupertitle{
-            width: 230px;
-            font-size: 14px;
-            line-height: 20px;
-            white-space: normal;
-            font-weight: 500;
-            color: rgb(65, 65, 65);
-            padding-bottom: 6px;
-        }
-        .namecardsubjects{
-            color: rgb(140, 140, 140);
-            font-size: 13px;
-            line-height: 19px;
-            padding-top: 6px;
-            font-weight:400;
-            vertical-align: bottom;
-            
-        }
-        .namecardimg{
-            overflow: hidden;
-            background-size: 100%;
-            position: absolute;
-            top:10px;
-            right:15px;
-        }
-        
-
-        a span {
-            display: none;
-        }
-
-        .appmenu{
-            width: auto;
-            height: 60px;
-            background-color: #D1DDEC;
-            padding-top: 10px;
-            position: -webkit-sticky;
-            position: -moz-sticky;
-            position: -ms-sticky;
-            position: -o-sticky;
-            
-        
-        }
-        .navover{
-            width: 20%;
-            float: left;
-            height: 30px;
-            background-color: #b9ceeb;
-            margin-left: 7%;
-            padding-top:10px;
-            padding-right:10px;
-            padding-bottom:10px;
-            padding-left:20%;
-        }
-
-        .navhigh {
-            width: 20%;
-            float: left;
-            height: 30px;
-            background-color: #b9ceeb;
-            margin-left:1%;
-            padding-top:10px;
-            padding-right:10px;
-            padding-bottom:10px;
-            padding-left:20%;
-         }
-
-         .navover a {
-            text-decoration: none;
-            color: #3170c4;
-            padding:0px !important;
-            font-size: 28px;
-            
-        }
-        
-        .navhigh a {
-            text-decoration: none;
-            color: #3170c4;
-            padding:0px !important;
-            vertical-align: middle;
-            font-size: 28px;
-
-        }
-        .navover a:hover {
-            color:#ffa600;
-        }
-        .navhigh a:hover {
-            color:#ffa600;
-        }
-        
-        .msection {
-            width: auto;
             overflow: scroll;
-            background:white;
-            margin-top: 10px;
-            
-        }
-        #overview {
-            width: auto;
-            margin:0px;
+            background-color: white;
+            margin-left: 5px;
             text-align: left;
-            
-        
         }
-        #toprow {
+        #snapshot {
+            float: left;
+            width: 300px;
+            height: 250px;
+            overflow: scroll;
+            margin-top: 10px;
+            margin-left: 0px;
+            text-align: left;
+
+        }
+        #content{
+            width: 98%;
+            float: right;
+            overflow:auto;
+            margin-top: 10px !important; 
+            margin-right: 10px !important; 
+        }
+        #bottomrow {
             flex-direction: column;
             display: flex;
             background: #EBEEF4;
-            width: 100%  ;
-            margin-top: 220px;
-            }
-        #wizzlets {
-                margin-top: 10px;
-                width: 300px;
-                height: 500px;
-                float: left;
-                display: grid;
-                grid-template-columns: auto;
-                overflow: scroll;
-                background-color: white;
-                margin-left: 5px;
-                text-align: left;
-            }
-            #snapshot {
-                float: left;
-                width: 300px;
-                height: 250px;
-                overflow: scroll;
-                margin-top: 10px;
-                margin-left: 0px;
-                text-align: left;
-
-            }
-            #content{
-                width: 100%;
-                float: right;
-                overflow:auto;
-                margin-top: 55px !important; 
-                
-            }
-            #bottomrow {
-                flex-direction: column;
-                display: flex;
-                background: #EBEEF4;
-                width: 100%;
-            }
-            .wqbody{
-                text-align: left;
-                font: size 14px;
-                line-height:20px;
-                vertical-align:baseline;
-                letter-spacing:normal;
-                word-spacing:0px;
-                margin:0px 0px 16px;
-                padding:16px 16px 0px;
-                font-weight:400;
-                text-transform:none;
-            }
+            width: 100%;
+        }
+        .wqbody{
+            text-align: left;
+            font: size 14px;
+            line-height:20px;
+            vertical-align:baseline;
+            letter-spacing:normal;
+            word-spacing:0px;
+            margin:0px 0px 16px;
+            padding:16px 16px 0px;
+            font-weight:400;
+            text-transform:none;
+        }
+        
+        .blockquote {
+            color: #5a5a5a;
+            position: relative;
+            font-size: 17px;
+            line-height: 27px;
+            font-style: italic;
+            padding: 0px;
+            margin: 0px;
+            text-align: left;
             
-            .blockquote {
-                color: #5a5a5a;
-                position: relative;
-                font-size: 17px;
-                line-height: 27px;
-                font-style: italic;
-                padding: 0px;
-                margin: 0px;
-                text-align: left;
-                
-                
-            }
-            .blockquote:before {
-                font-family: "Roboto";
-                content: " \201C ";
-                font-size: 46px;
-                font-weight: 400;
-                position: absolute;
-                left: -24px;
-                top: 4px;
-                color: #5a5a5a;
-            }
-
-            .otitlegroup{
-                color:#000000;
-                font: size 14px;
-                line-height:20px;
-                vertical-align:baseline;
-                letter-spacing:normal;
-                word-spacing:0px;
-                margin:0px 0px 8px;
-                padding:0px 20px;
-                font-weight:400;
-                text-transform:none;
-            }
-            .otitle{
-                font-size: 15px;
-                color: rgb(86, 149, 230);
-                display: block;
-                line-height: 15px;
-                padding-bottom: 10px;
-                text-transform: uppercase;
-            }
-            .osupertitle{
-                font-size: 24px;
-                line-height: 30px;
-                white-space: normal;
-                font-weight: 500;
-                color: rgb(43, 43, 43);
-            }
-            .osubjects{
-                color:#8c8c8c;
-                font: size 14px;
-                line-height:20px;
-                vertical-align:top;
-                letter-spacing:normal;
-                word-spacing:0px;
-                margin:0px;
-                margin-bottom: 8px;
-                padding: 0px 20px 10px 20px;
-                font-weight:400;
-                text-transform:none;
-                font-size: 14px;
-                color: rgb(140, 140, 140);
-                display: inline-block;
-            }
-            .heroimage img {
-                width: 300px;
-                height: auto;
-                max-height: 150px
             
-            }
-            .ocontentbox{
-                color:#000000;
-                font: size 14px;
-                line-height:20px;
-                vertical-align:baseline;
-                letter-spacing:normal;
-                word-spacing:0px;
-                margin:0px;
-                padding: 0px 20px 20px;
-                font-weight:400;
-                text-transform:none;
-            }
-            .ocontent{
-                font-family:"Roboto Slab";
-                color:#414141;
-                font-size: 16.012px;
-                line-height:26px;
-                vertical-align:baseline;
-                letter-spacing:normal;
-                word-spacing:0px;
-                margin:0px;
-                padding-top: 20px;
-                font-weight:300;
-                text-transform:none;
-            }
-            .ocontentsub{
-                font-family:"Roboto Slab";
-                color:#464646;
-                font-size: 16.012px;
-                font-weight:400;
-            }
-            .vsetsgroup{
-                display: grid;
-                grid-template-columns: auto;
-                align-items: left;
-                align-content: left;
-                text-align: left;
+        }
+        .blockquote:before {
+            font-family: "Roboto";
+            content: " \201C ";
+            font-size: 46px;
+            font-weight: 400;
+            position: absolute;
+            left: -24px;
+            top: 4px;
+            color: #5a5a5a;
+        }
 
-            
+        .otitlegroup{
+            color:#000000;
+            font: size 14px;
+            line-height:20px;
+            vertical-align:baseline;
+            letter-spacing:normal;
+            word-spacing:0px;
+            margin:0px 0px 8px;
+            padding:0px 20px;
+            font-weight:400;
+            text-transform:none;
+        }
+        .otitle{
+            font-size: 15px;
+            color: rgb(86, 149, 230);
+            display: block;
+            line-height: 15px;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .osupertitle{
+            font-size: 24px;
+            line-height: 28px;
+            white-space: normal;
+            font-weight: 500;
+            color: rgb(43, 43, 43);
+        }
+        .osubjects{
+            color:#8c8c8c;
+            font: size 14px;
+            line-height:20px;
+            vertical-align:top;
+            letter-spacing:normal;
+            word-spacing:0px;
+            margin:0px;
+            margin-bottom: 8px;
+            padding: 0px 20px 10px 20px;
+            font-weight:400;
+            text-transform:none;
+            font-size: 14px;
+            color: rgb(140, 140, 140);
+            display: inline-block;
+        }
+        .heroimage img {
+            width: 300px;
+            height: auto;
+            max-height: 150px
+        
+        }
+        .ocontentbox{
+            color:#000000;
+            font: size 14px;
+            line-height:20px;
+            vertical-align:baseline;
+            letter-spacing:normal;
+            word-spacing:0px;
+            margin:0px;
+            padding: 0px 20px 20px;
+            font-weight:400;
+            text-transform:none;
+        }
+        .ocontent{
+            font-family:"Roboto Slab";
+            color:#414141;
+            font-size: 16.012px;
+            line-height:30px;
+            vertical-align:baseline;
+            letter-spacing:normal;
+            word-spacing:0px;
+            margin:0px;
+            padding-top: 20px;
+            font-weight:300;
+            text-transform:none;
+        }
+        .ocontentsub{
+            font-family:"Roboto Slab";
+            color:#464646;
+            font-size: 16.012px;
+            font-weight:400;
+        }
+        .vsetsgroup{
+            display: grid;
+            grid-template-columns: auto;
+            align-items: left;
+            align-content: left;
+            text-align: left;
 
-    }
+        
+
+}
